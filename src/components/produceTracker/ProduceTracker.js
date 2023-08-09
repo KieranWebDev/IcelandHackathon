@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { annualProduce } from '../../data';
 import './producetracker.css';
 
+import Card from '../Card/Card';
 
 const ProduceTracker = () => {
 
@@ -24,6 +25,7 @@ const ProduceTracker = () => {
           <h1>Seasonal Produce Finder</h1>
           <h3>Find out which foods are in season</h3>
 
+
           <div>
             <button className="january" onClick={() => handleClick(0)}>January</button>
             <button className="february" onClick={() => handleClick(1)}>February</button>
@@ -37,6 +39,7 @@ const ProduceTracker = () => {
             <button className="october" onClick={() => handleClick(9)}>October</button>
             <button className="november" onClick={() => handleClick(10)}>November</button>
             <button className="december" onClick={() => handleClick(11)}>December</button>
+
           </div>
 
         
