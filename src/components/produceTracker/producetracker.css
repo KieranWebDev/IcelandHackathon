@@ -66,5 +66,6 @@ hr {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-evenly;
+background-color: #348A2C;
 
 }
