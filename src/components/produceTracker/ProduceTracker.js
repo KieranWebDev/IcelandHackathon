@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { annualProduce } from '../../data';
 import './producetracker.css';
+import defaultPic from '../../assets/defaultImg.png';
 
 import Card from '../Card/Card';
 
@@ -159,7 +160,10 @@ const ProduceTracker = () => {
             );
           })
         ) : (
-          <h3>Please Select a month</h3>
+          <div className="defaultImg">
+            <h3>Please Select a month</h3>
+            <img src={defaultPic} alt="defaultPic" />
+          </div>
         )}
       </div>
     </section>
