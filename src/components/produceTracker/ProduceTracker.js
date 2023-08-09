@@ -1,5 +1,6 @@
 import React from 'react';
 import './producetracker.css';
+
 import Card from '../Card/Card';
 
 const ProduceTracker = () => {
@@ -27,9 +28,7 @@ const ProduceTracker = () => {
           </form>
 
           <div className="display">
-          <Card name="Iceland" />
-          <Card name="Iceland" />
-
+        
 
           </div>
         </div>
