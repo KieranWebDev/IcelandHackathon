@@ -17,10 +17,12 @@ const ProduceTracker = () => {
   return (
     <section>
       <div className="container">
+      <div className="banner"></div>
         <h1>Seasonal Produce Finder</h1>
         <h3>Find out which foods are in season</h3>
-
-        <div>
+        <hr />
+        <div className="button-container">
+        <div className="row1">
           <button className="january" onClick={() => handleClick(0)}>
             January
           </button>
@@ -39,6 +41,8 @@ const ProduceTracker = () => {
           <button className="june" onClick={() => handleClick(5)}>
             June
           </button>
+          </div>
+          <div className="row2">
           <button className="july" onClick={() => handleClick(6)}>
             July
           </button>
@@ -57,8 +61,9 @@ const ProduceTracker = () => {
           <button className="december" onClick={() => handleClick(11)}>
             December
           </button>
+          </div>
         </div>
-
+        <hr />
         <div className="produce-list">
           {produceList.map((produce) => {
             return (
