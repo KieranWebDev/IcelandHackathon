@@ -126,10 +126,10 @@ const ProduceTracker = () => {
               );
             })
           ) : (
-            <h1>Please Select a month</h1>
+            <h3>Please Select a month</h3>
           )}
         </div>
-      </div>
+      
     </section>
   );
 };
