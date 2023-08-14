@@ -8,9 +8,10 @@ import { annualProduce } from './data';
 import MonthPickerButton from '.';
 import Card from './components/Card/Card';
 import Banner from './components/Banner/Banner';
+import MonthPickerButtonsContainer from './components/MonthPickerButtonsContainer/MonthPickerButtonsContainer';
+import ProduceListCardContainer from './components/ProduceListCardContainer/ProduceListCardContainer';
 
 function App() {
-
   const [produceList, setProduceList] = useState([]);
   const [activeMonth, setActiveMonth] = useState(null);
 
@@ -20,11 +21,15 @@ function App() {
     // console.log('produce list', produceList, activeMonth);
   };
 
-
   return (
     <section>
       <div className="container">
         <Banner />
+        <MonthPickerButtonsContainer
+          handleClick={handleClick}
+          activeMonth={activeMonth}
+        />
+        <ProduceListCardContainer produceList={produceList} />
       </div>
     </section>
   );
