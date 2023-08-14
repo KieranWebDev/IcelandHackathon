@@ -1,12 +1,32 @@
-import ProduceTracker from './components/produceTracker/ProduceTracker';
-import Card from './components/Card/Card';
+import React, { useState } from 'react';
+// css
+// import './producetracker.css';
 import './App.css';
+// product data
+import { annualProduce } from './data';
+// components
+import MonthPickerButton from '.';
+import Card from './components/Card/Card';
+import Banner from './components/Banner/Banner';
 
 function App() {
+
+  const [produceList, setProduceList] = useState([]);
+  const [activeMonth, setActiveMonth] = useState(null);
+
+  const handleClick = (month) => {
+    setActiveMonth(month);
+    setProduceList(annualProduce[month]);
+    // console.log('produce list', produceList, activeMonth);
+  };
+
+
   return (
-    <div className="App">
-      <ProduceTracker />
-    </div>
+    <section>
+      <div className="container">
+        <Banner />
+      </div>
+    </section>
   );
 }
 

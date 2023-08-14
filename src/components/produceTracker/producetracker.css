@@ -3,9 +3,10 @@ section {
   display: flex;
   flex-direction: column;
   width: 60%;
-  background: #348A2C;
+  background: #348a2c;
   height: 100vh;
   color: #fff;
+  margin: 0 auto;
 }
 
 /* .container {
@@ -52,20 +53,19 @@ hr {
   padding: 2rem 0;
 }
 
-.buttonContainer button {
+/* .buttonContainer button {
   padding: 0.5rem;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   font: 1.2rem;
   min-width: 25px;
-}
+} */
 
 .produce-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-evenly;
-background-color: #348A2C;
-
+  background-color: #348a2c;
 }

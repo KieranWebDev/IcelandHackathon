@@ -1,3 +1,5 @@
+import './MonthPickerButton.css';
+
 function MonthPickerButton({ handleClick, activeMonth, index, month }) {
   return (
     <button
