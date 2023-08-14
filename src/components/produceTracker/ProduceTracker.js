@@ -3,6 +3,8 @@ import { annualProduce } from '../../data';
 import './producetracker.css';
 import defaultPic from '../../assets/defaultImg.png';
 
+// components
+import MonthPickButton from '../MonthPickButton/MonthPickButton';
 import Card from '../Card/Card';
 
 const ProduceTracker = () => {
@@ -23,6 +25,10 @@ const ProduceTracker = () => {
         <h3>Find out which foods are in season</h3>
 
         <div className="buttonContainer">
+          <MonthPickButton
+            handleClick={() => handleClick(0)}
+            activeMonth={activeMonth}
+          />
           <button
             className="january"
             onClick={() => handleClick(0)}
