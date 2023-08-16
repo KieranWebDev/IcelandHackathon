@@ -7,12 +7,7 @@ function ProduceListCardContainer({ produceList }) {
       {produceList.length > 0 ? (
         produceList.map((produce) => {
           return (
-            <Card
-              key={produce.name}
-              name={produce.name}
-              image={produce.image}
-              description={produce.description}
-            />
+            <Card key={produce.name} name={produce.name} type={produce.type} />
           );
         })
       ) : (
