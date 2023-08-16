@@ -5,8 +5,6 @@ import './App.css';
 // product data
 import { annualProduce } from './data';
 // components
-import MonthPickerButton from '.';
-import Card from './components/Card/Card';
 import Banner from './components/Banner/Banner';
 import MonthPickerButtonsContainer from './components/MonthPickerButtonsContainer/MonthPickerButtonsContainer';
 import ProduceListCardContainer from './components/ProduceListCardContainer/ProduceListCardContainer';
@@ -25,6 +23,7 @@ function App() {
     <section>
       <div className="container">
         <Banner />
+        <hr />
         <MonthPickerButtonsContainer
           handleClick={handleClick}
           activeMonth={activeMonth}

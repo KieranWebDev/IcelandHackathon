@@ -2,7 +2,7 @@
   /* Card size */
   max-width: 200px;
   max-height: 250px;
-  padding: 0.3rem;
+  padding: 0.5rem;
 
   /* Card border */
   border: 1px solid #ccc;
@@ -18,6 +18,9 @@
   color: black;
   text-align: center;
   font-family: arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-header {
@@ -26,8 +29,8 @@
 
 .image {
   /* Image size */
-  width: 90%;
+  width: 100%;
 
   /* Image border */
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
