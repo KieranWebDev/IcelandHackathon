@@ -17,7 +17,7 @@ function App() {
 
   const handleClick = (month) => {
     setActiveMonth(month);
-    setProduceList(annualProduce[month]);
+    setProduceList(annualProduce[month].slice(0, 10));
     // console.log('produce list', produceList, activeMonth);
   };
 
